@@ -1,4 +1,5 @@
 import fs from "fs";
+import Link from "next/link";
 
 //Function to read files from /posts
 const getPostMetadata = () => {
@@ -13,7 +14,9 @@ const HomePage = () => {
   const postMetadata = getPostMetadata();
   const postPreviews = postMetadata.map((slug) => (
     <div>
-      <h2>{slug}</h2>
+      <Link href={`/posts/${slug}`}>
+        <h2>{slug}</h2>
+      </Link>
     </div>
   ));
   return <div>{postPreviews}</div>;
