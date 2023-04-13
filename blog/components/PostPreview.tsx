@@ -4,7 +4,7 @@ import { PostMetaData } from "./PostMetaData";
 //Every title for main page , props is of type PostMetaData
 const PostPreviews = (props: PostMetaData) => {
   return (
-    <div>
+    <div className="mt-20">
       <Link href={`/posts/${props.slug}`}>
         <h2>{props.title}</h2>
       </Link>
