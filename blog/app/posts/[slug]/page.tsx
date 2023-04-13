@@ -1,4 +1,5 @@
 import fs from "fs";
+import Markdown from "markdown-to-jsx";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -8,12 +9,12 @@ const getPostContent = (slug: string) => {
 };
 
 const PostPage = (props: any) => {
-  const slug = props.params.slug;
+  const slug = props.params.slug; //dynamic path from [slug]
   const content = getPostContent(slug);
   return (
     <div>
       HEllo this is post : {slug}
-      <p>{content}</p>
+      <Markdown>{content}</Markdown>
     </div>
   );
 };
