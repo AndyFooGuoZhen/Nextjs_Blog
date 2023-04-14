@@ -28,18 +28,27 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className=" px-32 md:px-32">
-        <section className="min-h-screen flex justify-between">
+      <body className="px-10  lg:bg-blue-900">
+        <section className="min-h-screen md:flex w-auto mt-6 relative">
           {/* {header} */}
-          <div className="flex min-h-full justify-center items-center relative text-center w-1/2 bg-slate-400">
-            <div className="flex-row fixed">
-              <h1>Side Nav</h1>
-              <h1>Side Nav</h1>
-              <h1>Side Nav</h1>
-              <h1>Side Nav</h1>
+
+          <div className=" flex justify-center w-full">
+            <div className=" flex justify-around  mt-1 ">
+              <h2 className="w-24 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">
+                Posts
+              </h2>
+              <h2 className="w-28 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">
+                About me
+              </h2>
+              <h2 className="w-24 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">
+                Contact
+              </h2>
             </div>
           </div>
-          <div className="flex w-1/2 justify-center">{children}</div>
+
+          <div className=" mt-3 p-3 flex-row w-full justify-center">
+            {children}
+          </div>
 
           {/* {footer} */}
         </section>
