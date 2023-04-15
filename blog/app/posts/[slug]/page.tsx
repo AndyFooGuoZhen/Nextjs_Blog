@@ -3,6 +3,11 @@ import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetaData";
 import { remark } from "remark";
 import html from "remark-html";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+// ReactMarkdown
+
+//For future reference in case markdown not working
+//https://stackoverflow.com/questions/70075003/nextjs-global-css-header-element-doesnt-apply-to-a-parsed-markdown-replaced-by
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -26,8 +31,10 @@ const PostPage = async (props: any) => {
   const contentHtml = processedContent.toString();
 
   return (
-    <div className="overflow-auto mb-14 prose">
+    <div className="mb-14 prose">
       <h1>{post.data.title}</h1>
+      {/* <p>{post.content}</p> */}
+      {/* <ReactMarkdown>{post.content}</ReactMarkdown> */}
       <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </div>
   );
