@@ -31,13 +31,6 @@ const AboutMe = () => {
           explore the world together. Thanks for stopping by!
         </h3>
       </div>
-
-      {/* <Image
-        src={myImage}
-        alt={"Example"}
-        // style={"border-radius: 50%"}
-        className="rounded-full object-cover"
-      /> */}
     </div>
   );
 };
