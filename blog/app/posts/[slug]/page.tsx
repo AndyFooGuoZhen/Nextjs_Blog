@@ -1,7 +1,8 @@
 import fs from "fs";
-import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetaData";
+import { remark } from "remark";
+import html from "remark-html";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -17,13 +18,17 @@ export const generateStaticParams = async () => {
   return posts.map((post) => ({ slug: post.slug }));
 };
 
-const PostPage = (props: any) => {
+const PostPage = async (props: any) => {
   const slug = props.params.slug; //dynamic path from [slug]
   const post = getPostContent(slug);
+
+  const processedContent = await remark().use(html).process(post.content);
+  const contentHtml = processedContent.toString();
+
   return (
-    <div className="overflow-auto mb-14">
+    <div className="overflow-auto mb-14 prose">
       <h1>{post.data.title}</h1>
-      <Markdown options={{ forceInline: true }}>{post.content}</Markdown>
+      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </div>
   );
 };
