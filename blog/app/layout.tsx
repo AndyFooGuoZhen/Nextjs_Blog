@@ -21,16 +21,16 @@ export default function RootLayout({
   );
 
   const footer = (
-    <div className="text-center mb-3">
+    <div className="text-center mb-3 text-xs">
       <h1 className="text-gray-400">Developed by Andy</h1>
     </div>
   );
 
   return (
     <html lang="en">
-      <body className="px-10 md:px-24 lg:px-80 ">
-        <div className="min-h-screen flex flex-col justify-between">
-          <section className="md:flex w-full relative mt-3">
+      <body className="px-10 md:px-24 items-center flex justify-center">
+        <div className="min-h-screen flex flex-col justify-between max-w-3xl">
+          <section className="md:flex w-full relative mt-3 ">
             <div className="flex justify-around text-center md:flex-col p-3 md:justify-start md:items-end md:text-start w-full mb-3 md:w-1/6 md:ml-10">
               <Link href={"/"}>
                 <h2 className=" w-24 md:w-28 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 ">

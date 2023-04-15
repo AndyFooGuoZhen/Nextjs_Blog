@@ -21,7 +21,7 @@ const PostPage = (props: any) => {
   const slug = props.params.slug; //dynamic path from [slug]
   const post = getPostContent(slug);
   return (
-    <div className="overflow-auto">
+    <div className="overflow-auto mb-14">
       <h1>{post.data.title}</h1>
       <Markdown options={{ forceInline: true }}>{post.content}</Markdown>
     </div>

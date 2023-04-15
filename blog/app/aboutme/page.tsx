@@ -3,12 +3,14 @@ import myImage from "./Andy_Foo.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="mx-auto md:text-start">
-      <h1 className=" text-center text-3xl font-abel mb-6">Andy Foo</h1>
-      <div className="relative mx-auto rounded-full w-32 h-32  overflow-hidden ">
+    <div className="mx-auto md:text-start md:text">
+      <h1 className=" text-center text-3xl font-abel mb-6 md:text-4xl">
+        Andy Foo
+      </h1>
+      <div className="relative mx-auto rounded-full w-32 h-32 overflow-hidden ">
         <Image src={myImage} layout="fill" objectFit="cover" alt="" />
       </div>
-      <div className="mt-11 px-4 text-justify text-sm">
+      <div className="mt-11 px-4 text-justify text-sm md:text-lg ">
         <h3>
           Hi there! I'm Andy. I'm currently a student at Iowa State University
           majoring in CS in my senior year. I'm always looking for ways to push
