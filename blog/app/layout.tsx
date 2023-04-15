@@ -28,7 +28,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="px-10 md:px-24 lg:px-48  ">
+      <body className="px-10 md:px-24 lg:px-80 ">
         <div className="min-h-screen flex flex-col justify-between">
           <section className="md:flex w-full relative mt-3">
             <div className="flex justify-around text-center md:flex-col p-3 md:justify-start md:items-end md:text-start w-full mb-3 md:w-1/6 md:ml-10">
