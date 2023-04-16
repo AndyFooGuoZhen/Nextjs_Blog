@@ -1,5 +1,6 @@
 import Image from "next/image";
 import myImage from "./Andy_Foo.jpg";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const AboutMe = () => {
   return (

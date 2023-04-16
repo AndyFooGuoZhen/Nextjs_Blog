@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "../styles/globals.css";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 export const metadata = {
   title: "Andy's Blog",
@@ -11,20 +12,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const header = (
-    <div>
-      <Link href={"/"}>
-        <h1 className="">Andy's Blog</h1>
-      </Link>
-      <h2>Welcome to my blog.</h2>
-    </div>
-  );
-
   const footer = (
     <div className="text-center mb-3 text-xs">
       <h1 className="text-gray-400">Developed by Andy</h1>
     </div>
   );
+
+  // props.params.prop1 = "hello";
+  // props.params.prop2 = 2;
+  // const Component: React.FC<ComponentProps> = ({ prop1, prop2 }) => {
+  //   return <div className="p-3 flex flex-col w-full md:w-3/6">{children}</div>;
+  // };
 
   return (
     <html lang="en">
@@ -51,7 +49,17 @@ export default function RootLayout({
               {children}
             </div>
           </section>
-          {footer}
+          <div>
+            <div className="flex justify-center">
+              <a href="https://www.linkedin.com/in/andyfoo/" target="_blank">
+                <AiFillLinkedin className="text-4xl" />
+              </a>
+              <a href="https://github.com/AndyFooGuoZhen" target="_blank">
+                <AiFillGithub className="text-4xl" />
+              </a>
+            </div>
+            {footer}
+          </div>
         </div>
       </body>
     </html>

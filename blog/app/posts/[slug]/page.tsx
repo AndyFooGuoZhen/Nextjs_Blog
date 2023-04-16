@@ -3,7 +3,6 @@ import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetaData";
 import { remark } from "remark";
 import html from "remark-html";
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 // ReactMarkdown
 
 //For future reference in case markdown not working
