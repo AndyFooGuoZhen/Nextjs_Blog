@@ -31,9 +31,14 @@ const PostPage = async (props: any) => {
   const contentHtml = processedContent.toString();
 
   return (
-    <div className=" mb-14 prose ">
-      <h1>{post.data.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    <div className=" mb-14 ">
+      <h1 className="text-3xl font-bold">{post.data.title}</h1>
+      <h2 className="text-md mb-10 text-gray-400">{post.data.date}</h2>
+
+      <div
+        className="prose md:prose-lg lg:prose-xl"
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+      />
     </div>
   );
 };

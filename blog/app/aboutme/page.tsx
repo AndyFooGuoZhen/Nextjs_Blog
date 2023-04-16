@@ -3,8 +3,8 @@ import myImage from "./Andy_Foo.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="mx-auto md:text-start md:text">
-      <h1 className=" text-center text-3xl font-abel mb-6 md:text-4xl">
+    <div className="mx-auto md:text-start md:text md:max-w-6xl">
+      <h1 className=" font-bold text-center text-3xl font-abel mb-6 md:text-4xl">
         Andy Foo
       </h1>
       <div className="relative mx-auto rounded-full w-32 h-32 overflow-hidden ">

@@ -42,12 +42,12 @@ export default function RootLayout({
                   About me
                 </h2>
               </Link>
-              <h2 className="w-24 md:w-28 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100 font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 ">
+              {/* <h2 className="w-24 md:w-28 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100 font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 ">
                 Contact
-              </h2>
+              </h2> */}
             </div>
 
-            <div className=" p-3 flex flex-col w-full md:w-2/6  ">
+            <div className=" p-3 flex flex-col w-full md:w-3/6 ">
               {children}
             </div>
           </section>
