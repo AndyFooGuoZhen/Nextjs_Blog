@@ -12,7 +12,7 @@ date: "2023-04-15"
 
 #### What is prose used for?
 
-- Used for adding typographic defaults to HTML code that isn'd directly added by the user (dangerouslySetInnerHtml for markdown is one example)
+- Used for adding typographic defaults to HTML code that isn't directly added by the user (dangerouslySetInnerHtml for markdown is one example)
 - Remove browser default styling to html, once tailwind's prose is added to parent tag, width can't be easilly controlled
 - Width can be changed using prose-sm, prose-lg instead
 
