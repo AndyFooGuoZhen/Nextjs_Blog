@@ -33,7 +33,7 @@ date: "2023-04-15"
 
 - Max Tegmark described ai optimization using capitalism as an example
 - Capitalism enables open markets and more profit, more people benefit from it initially. But if capitalism optimizes too much, we see trees being cut down , nature being harmed for more profit.
-- Same goers for Ai, if Ai hyperoptimizes towards a goal, it will become dangerous at some point
+- Same goes for Ai, if Ai hyperoptimizes towards a goal, it will become dangerous at some point
 - Ai doesn't need to be smart to be dangerous, it just needs to be very good at optimizing for goals. That's why the parameters / prompts for future ai must be carefully defined.
 
 #### Links:
