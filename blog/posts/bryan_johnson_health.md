@@ -25,7 +25,7 @@ date: "2023-04-19"
 ##### Thoughts about Bryan Johnson's approach to health care
 
 - I personally think he is contributing a lot to health research, lots of valuable data can be collected from his experiments
-- Would be cool to see the long term effects of this experiment. Would there be any side effects that we don't know of? How does the body react to long term dosage of this supplements?
+- Would be cool to see the long term effects of this experiment. Would there be any side effects that we don't know of? How does the body react to long term dosage of these supplements?
 - How would people react to this experiment? Opinions on parents replacing their child's diet using Bryan Johnson's approach that includes the use of supplements and machines?
 - If this "anti-aging" experiment actually works, would people that are able to afford it willing to do the same as well? Money plays a more significant role in personal healthcare for the future?
 - Age disparity between people living in developed countries vs developing countries in the future?
