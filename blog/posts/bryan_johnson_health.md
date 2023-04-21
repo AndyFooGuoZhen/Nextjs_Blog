@@ -12,7 +12,7 @@ date: "2023-04-19"
 ##### Steps taken to "slow-down" aging
 
 - Congesting nutritional pills , following an extremely strict diet plan that is professional prepared by his nutitionist/scientists
-- Performs different varities exercises every day
+- Performs different varieties exercises every day
 - Use of machines to aid in fat burn, skin care, teeth, sleep
 - Taking measurements daily to monitor condition of his organs, skin (entirety of his body basically)
 
