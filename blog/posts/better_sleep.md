@@ -18,7 +18,7 @@ date: "2023-04-20"
 
 ##### Reflection and questions I have about sleep
 
-- Is it more important to het consistent amount of sleep everyday or consistent sleep and wake times?
+- Is it more important to get consistent amount of sleep everyday or consistent sleep and wake times?
 - What makes a person a light sleeper? Are they not in deep sleep most of the time?
 - Is it better to wake up later on the weekends?
 - How can I get rid of the dark circles under my eyes? It's always there no matter how long I sleep. Is there something wrong with my sleep that I don't know about? Or are there any other lifestyle habits that I'm not aware of that's causing the dark circles under my eyes
