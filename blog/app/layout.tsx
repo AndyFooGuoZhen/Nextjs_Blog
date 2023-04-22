@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "../styles/globals.css";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AnalyticsWrapper } from '../components/analytics';
 
 export const metadata = {
   title: "Andy's Blog",
@@ -60,6 +61,7 @@ export default function RootLayout({
             </div>
             {footer}
           </div>
+          <AnalyticsWrapper />
         </div>
       </body>
     </html>
