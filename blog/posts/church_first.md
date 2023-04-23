@@ -2,6 +2,7 @@
 title: "Going to church service for the 1st time"
 subtitle: "Just gonna note down my experience at a church "
 date: "2023-04-16"
+tags: ""
 ---
 
 ##### What motivated me to step into a church on a Sunday?

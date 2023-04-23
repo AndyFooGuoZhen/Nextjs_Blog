@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { PostMetaData } from "./PostMetaData";
 import { ChangeEvent, useState, useEffect} from "react";
-import PostPreviews from "./PostPreview";
+import PostPreview from "./PostPreview";
 
 const FilteredPostPreviews = (props: PostMetaData[]) => {
 
@@ -21,7 +21,7 @@ const FilteredPostPreviews = (props: PostMetaData[]) => {
     data.subtitle.toLowerCase().includes(filterWord));
 
     const postPreviews = filteredPostMetaDatas.map((data) => (
-    <PostPreviews key={data.title} {...data} />
+    <PostPreview key={data.title} {...data} />
   ));
 
     return (

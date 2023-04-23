@@ -2,6 +2,7 @@
 title: "Halting Ai with Lex Fridman and Max Tegmark "
 subtitle: "Interesting ideas about regulation and rate of development for current state of Ai"
 date: "2023-04-15"
+tags: ""
 ---
 
 #### Interesting takeaways from the 1st hour of the podcast:

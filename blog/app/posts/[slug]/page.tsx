@@ -1,20 +1,14 @@
-import fs from "fs";
-import matter from "gray-matter";
+
 import getPostMetadata from "@/components/getPostMetaData";
 import { remark } from "remark";
 import html from "remark-html";
+import getPostContent from "@/components/getPostContent";
 // ReactMarkdown
 
 //For future reference in case markdown not working
 //https://stackoverflow.com/questions/70075003/nextjs-global-css-header-element-doesnt-apply-to-a-parsed-markdown-replaced-by
 
-const getPostContent = (slug: string) => {
-  const folder = "posts/";
-  const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, "utf-8");
-  const matterResult = matter(content);
-  return matterResult;
-};
+
 
 //For static generation of pages, we need to let it know the slugs (fileNames)
 export const generateStaticParams = async () => {
