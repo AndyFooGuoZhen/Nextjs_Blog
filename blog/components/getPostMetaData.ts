@@ -7,18 +7,26 @@ const getPostMetadata = (): PostMetaData[] => {
   const folder = "posts/";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
-  // const slugs = markdownPosts.map((file) => file.replace(".md", ""));
 
   const posts = markdownPosts.map((fileName) => {
     const fileContents = fs.readFileSync(`posts/${fileName}`, "utf-8");
-    const matterResult = matter(fileContents);
+    const {data , content: matterResult} = matter(fileContents);
+
+
+    //write tags here if tags is empty, call gpt api here
+      if(data.tags == ""){
+      const newTags = 'testTags';
+      const updatedData = {...data, tags: newTags};
+      const updatedContent = matter.stringify(matterResult, updatedData);
+      fs.writeFileSync(`posts/${fileName}`, updatedContent);
+    }
 
     return {
-      title: matterResult.data.title,
-      date: matterResult.data.date,
-      subtitle: matterResult.data.subtitle,
+      title: data.title,
+      date: data.date,
+      subtitle: data.subtitle,
       slug: fileName.replace(".md", ""),
-      tags: matterResult.data.tags,
+      tags: data.tags,
     };
   });
 
