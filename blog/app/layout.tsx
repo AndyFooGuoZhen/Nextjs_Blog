@@ -19,12 +19,6 @@ export default function RootLayout({
     </div>
   );
 
-  // props.params.prop1 = "hello";
-  // props.params.prop2 = 2;
-  // const Component: React.FC<ComponentProps> = ({ prop1, prop2 }) => {
-  //   return <div className="p-3 flex flex-col w-full md:w-3/6">{children}</div>;
-  // };
-
   return (
     <html lang="en">
       <body className="px-10 md:px-24 items-center flex justify-center ">

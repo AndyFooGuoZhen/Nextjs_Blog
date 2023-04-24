@@ -4,7 +4,7 @@ subtitle: >-
   Interesting ideas about regulation and rate of development for current state
   of Ai
 date: '2023-04-15'
-tags: testTags
+tags: 'Artificial Intelligence, Technology, Regulation'
 ---
 
 #### Interesting takeaways from the 1st hour of the podcast:

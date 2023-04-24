@@ -2,7 +2,7 @@
 title: Advancing the frontiers of human health with Bryan Johnson
 subtitle: 'Human health experiments, views on taking care of our health'
 date: '2023-04-19'
-tags: testTags
+tags: 'Health, Entrepreneurship, Self Improvement'
 ---
 
 #### Who is Bryan Johnson?

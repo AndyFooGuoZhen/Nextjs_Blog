@@ -17,7 +17,7 @@ const FilteredPostPreviews = (props: PostMetaData[]) => {
     const filteredPostMetaDatas = filterWord.trim() ===' ' ?
     PostMetaDatas
     : PostMetaDatas.filter((data :PostMetaData)=> 
-    data.title.toLowerCase().includes(filterWord)||
+    data.title.toLowerCase().includes(filterWord)|| data.tags.toLowerCase().includes(filterWord)||
     data.subtitle.toLowerCase().includes(filterWord));
 
     const postPreviews = filteredPostMetaDatas.map((data) => (

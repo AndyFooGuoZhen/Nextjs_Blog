@@ -2,7 +2,7 @@
 title: 'Changes in speaker positioning in music festivals '
 subtitle: Interesting stuff about speaker placement and sound design
 date: '2023-04-18'
-tags: testTags
+tags: 'Music, Technology, Entertainment'
 ---
 
 ##### Conventional placement of speakers (Point source)

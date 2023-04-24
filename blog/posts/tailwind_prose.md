@@ -1,8 +1,8 @@
 ---
-title: "Tailwind typography - Prose class "
-subtitle: "Discovered the use of prose for formatting markdowns"
-date: "2023-04-15"
-tags: "Cool"
+title: 'Tailwind typography - Prose class '
+subtitle: Discovered the use of prose for formatting markdowns
+date: '2023-04-15'
+tags: 'Technology, Web Development, Typography'
 ---
 
 #### How I came to use prose in the first place

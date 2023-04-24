@@ -23,10 +23,21 @@ const PostPage = async (props: any) => {
   const processedContent = await remark().use(html).process(post.content);
   const contentHtml = processedContent.toString();
 
+  let tags: string[] = [""];
+
+  if(post.data.tags.includes(",")){
+     tags = post.data.tags.split(",");
+  }
+
+  const tagElements = tags.map((tag, index) => {
+    return <h5 className=" px-1 border rounded-md mr-1 mt-1 text-gray-400 text-xs" key={index}>{tag}</h5>;
+  });
+
   return (
     <div className=" mb-14 ">
       <h1 className="text-3xl font-bold">{post.data.title}</h1>
-      <h2 className="text-md mb-10 text-gray-400">{post.data.date}</h2>
+      <h2 className="text-md text-gray-400">{post.data.date}</h2>
+      <div className="flex mb-10 items-start">{tagElements}</div>
 
       <div
         className="prose md:prose-lg lg:prose-xl"

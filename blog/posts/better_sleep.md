@@ -2,7 +2,7 @@
 title: Trying to get better sleep
 subtitle: Discussions about sleep
 date: '2023-04-20'
-tags: testTags
+tags: 'Sleep, Health, Self Improvement'
 ---
 
 #### Current problems I'm facing
