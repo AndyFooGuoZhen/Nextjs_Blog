@@ -20,7 +20,7 @@ const PostPreview = (props: PostMetaData) => {
         <h2 className="font-bold font-abel">{props.title}</h2>
         <h3 className="text-sm">{props.date}</h3>
         <h3 className="text-gray-400 text-sm">{props.subtitle}</h3>
-        <div className="flex items-start">{tagElements}</div>
+        <div className="flex flex-wrap items-start">{tagElements}</div>
       </Link>
     </div>
   );
