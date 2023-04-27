@@ -11,7 +11,7 @@ tags:
 ##### Great for scalability
 
 - As our data or model gets bigger, langchain has a memory module to "remember" the context of the previous input
-- Eliminates the need read all data or entire chunks of data from the beginning, utimately saving costs on reading tokens
+- Eliminates the need to read all data or entire chunks of data from the beginning, utimately saving costs on reading tokens
 
 ##### Better indexing 
 
@@ -19,7 +19,7 @@ tags:
 use chunking to break down large amount of texts into smaller segments
 - We can use RecursiveCharacterTextSplitter() method for this
 
-##### Provide better context
+##### Provides better context
 
 - As our input data gets larger, it becomes harder for us to define accurate prompts to acheieve our objectives, Langchain provides a really good abstraction for handling these kinds of problem
 
@@ -41,7 +41,7 @@ use chunking to break down large amount of texts into smaller segments
 
 #### Things I want to learn more about
 
-- How is lanchain used in next.js projects?
+- How is lanchain used in Next.js projects?
 - Storing embeddings into vectorstore databases
 - Inner workings of embeddings and vectorstores 
 
