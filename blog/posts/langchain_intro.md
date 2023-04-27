@@ -1,9 +1,8 @@
 ---
 title: 'Langchain introduction '
-subtitle: >-
-  Brief introduction to Langchain
+subtitle: Brief introduction to Langchain
 date: '2023-04-26'
-tags: 
+tags: 'Technology, Data Science, Artificial Intelligence'
 ---
 
 #### Why use Langchain?:
