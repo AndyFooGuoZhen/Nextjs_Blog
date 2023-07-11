@@ -1,6 +1,9 @@
 
 import getPostMetadata from "@/components/getPostMetaData";
 import { remark } from "remark";
+import remarkGfm from 'remark-gfm'
+import remarkParse from "remark-parse";
+
 import html from "remark-html";
 import getPostContent from "@/components/getPostContent";
 // ReactMarkdown
@@ -20,7 +23,7 @@ const PostPage = async (props: any) => {
   const slug = props.params.slug; //dynamic path from [slug]
   const post = getPostContent(slug);
 
-  const processedContent = await remark().use(html).process(post.content);
+  const processedContent = await remark().use(html).use(remarkGfm).process(post.content);
   const contentHtml = processedContent.toString();
 
   let tags: string[] = [""];

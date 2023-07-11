@@ -6,7 +6,7 @@ const PostPreview = (props: PostMetaData) => {
 
   let tags: string[] = [""];
 
-  if(props.tags.includes(",")){
+  if(props.tags !== null && props.tags.includes(",")){
      tags = props.tags.split(",");
   }
 

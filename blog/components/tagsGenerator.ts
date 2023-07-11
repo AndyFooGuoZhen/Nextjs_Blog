@@ -19,7 +19,7 @@ const tagGenerator = async (titleProp: string, contentProp: string)=>{
   const tagsChoices = tagsArray;
 
   const prompt = `This is my blog title ${title} and content: ${content}. 
-  Select three tags based on the title and content of the blog from ${tagsChoices} 
+  Select 3 tags based on the title and content of the blog from this list of tags: ${tagsChoices} 
   and display them in this format: tag1,tag2,tag3`;
 
  const completion = await openai.createChatCompletion({
