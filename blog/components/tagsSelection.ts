@@ -10,7 +10,7 @@ export const tagsArray = [
     "Love",
     "Travel",
     "Technology",
-    "Entrepreneurship",
+    "Entrepreneurship", 
     "Self Improvement",
     "Education",
     "Writing",

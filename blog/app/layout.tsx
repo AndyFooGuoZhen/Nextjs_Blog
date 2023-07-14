@@ -24,25 +24,44 @@ export default function RootLayout({
       <body className="px-10 md:px-24 items-center flex justify-center ">
         <div className="min-h-screen flex flex-col justify-between w-full">
           <section className="md:flex flex-row w-full relative mt-3 justify-center ">
-            <div className="flex justify-around text-center md:flex-col p-3 md:justify-start md:items-end md:text-start w-full mb-3 md:w-1/6 ">
-              <Link href={"/"}>
-                <h2 className=" w-24 md:w-28 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100  font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 ">
-                  Posts
-                </h2>
-              </Link>
+            {/* <div className="flex justify-around text-center mx-10 md:flex-col p-3 md:justify-start md:items-end md:text-start w-full mb-3 md:w-1/6 "> */}
+            <div className="flex justify-around text-center p-3 ">
+
               <Link href={"/aboutme"}>
-                <h2 className="w-28  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 ">
-                  About me
+                  {/* <h2 className="  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 "> */}
+                  <h2 className="  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm  ">
+
+                    About
+                  </h2>
+                </Link>
+                <Link href={"/portfolio"}>
+                  {/* <h2 className="  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 "> */}
+                  <h2 className="  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm  ">
+
+                    Portfolio
+                  </h2>
+                </Link>
+              <Link href={"/"}>
+                {/* <h2 className=" md:w-28 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100  font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 "> */}
+                <h2 className="  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm  ">
+
+                  Blog
                 </h2>
               </Link>
-              {/* <h2 className="w-24 md:w-28 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100 font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 ">
+              <Link href={"/contact"}>
+              {/* <h2 className=" md:w-28 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100 font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 "> */}
+              <h2 className="  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm  ">
+
                 Contact
-              </h2> */}
+              </h2>
+              </Link>
             </div>
 
-            <div className=" p-3 flex flex-col w-full md:w-3/6 ">
+            {/* <div className=" p-3 flex flex-col w-full md:w-3/6 "> */}
+            <div className=" p-3 flex flex-col md:w-1/2   ">
               {children}
             </div>
+
           </section>
           <div>
             <div className="flex justify-center">
