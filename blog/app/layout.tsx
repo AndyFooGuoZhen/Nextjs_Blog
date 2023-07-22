@@ -21,12 +21,15 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="px-10 md:px-24 items-center flex justify-center ">
+      {/* <body className="px-10 md:px-24 items-center flex justify-center lg:px-72 lg:bg-black"> */}
+      {/* <body className="px-10 md:px-24 items-center flex justify-center max-w-2xl"> */}
+        <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto justify-center">
         <div className="min-h-screen flex flex-col justify-between w-full">
-          <section className="md:flex flex-row w-full relative mt-3 justify-center ">
-            {/* <div className="flex justify-around text-center mx-10 md:flex-col p-3 md:justify-start md:items-end md:text-start w-full mb-3 md:w-1/6 "> */}
-            <div className="flex justify-around text-center p-3 ">
+          {/* <section className="md:flex flex-row w-full relative mt-3 justify-center "> */}
+          <section className="w-full relative mt-3  ">
 
+            {/* <div className="flex justify-around text-center mx-10 md:flex-col p-3 md:justify-start md:items-end md:text-start w-full mb-3 md:w-1/6 "> */}
+            <div className="flex justify-around text-center p-3 mb-3">
               <Link href={"/aboutme"}>
                   {/* <h2 className="  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 "> */}
                   <h2 className="  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm  ">
@@ -50,7 +53,7 @@ export default function RootLayout({
               </Link>
               <Link href={"/contact"}>
               {/* <h2 className=" md:w-28 text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100 font-medium rounded-lg text-sm px-5 py-2.5  mr-2 mb-2 "> */}
-              <h2 className="  text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm  ">
+              <h2 className=" text-gray-400 hover:text-gray-500 hover:bg-gradient-to-b from-white to-gray-100   font-medium rounded-lg text-sm  ">
 
                 Contact
               </h2>
@@ -58,7 +61,7 @@ export default function RootLayout({
             </div>
 
             {/* <div className=" p-3 flex flex-col w-full md:w-3/6 "> */}
-            <div className=" p-3 flex flex-col md:w-1/2   ">
+            <div className=" p-3 flex flex-col ">
               {children}
             </div>
 

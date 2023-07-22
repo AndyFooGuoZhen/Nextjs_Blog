@@ -42,8 +42,12 @@ const PostPage = async (props: any) => {
       <h2 className="text-md text-gray-400">{post.data.date}</h2>
       <div className="flex mb-10 items-start">{tagElements}</div>
 
-      <div
+      {/* <div
         className="prose md:prose-lg lg:prose-xl"
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+      /> */}
+       <div
+        className="prose  "
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
     </div>
