@@ -60,20 +60,11 @@ export default function RootLayout({
             </div>
 
             {/* <div className=" p-3 flex flex-col w-full md:w-3/6 "> */}
-            <div className=" p-3 flex flex-col ">
+            <div className=" p-3 flex flex-col">
               {children}
             </div>
-
           </section>
           <div>
-            <div className="flex justify-center">
-              <a href="https://www.linkedin.com/in/andyfoo/" target="_blank">
-                <AiFillLinkedin className="text-4xl" />
-              </a>
-              <a href="https://github.com/AndyFooGuoZhen" target="_blank">
-                <AiFillGithub className="text-4xl" />
-              </a>
-            </div>
             {footer}
           </div>
           <AnalyticsWrapper />
