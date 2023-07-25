@@ -26,39 +26,39 @@ const Contact = () => {
       <div className="md:flex-row md:flex justify-around mb-5">
 
       {/* <div className="lg:flex-row lg:flex justify-around mb-5"> */}
-          <div className="shadow-md p-6 rounded-3xl mb-10 md:w-3/6">
+          <div className="shadow-md p-6 rounded-3xl mb-10 md:w-3/6 nm-concave-slate-500">
             <form className="flex flex-col items-center text-center "  onSubmit={sendEmail}>
-              <h2 className="mb-5 font-bold text-2xl">Contact Form</h2>
+              <h2 className="mb-5 font-bold text-2xl text-slate-300">Contact Form</h2>
               <input
                 placeholder="Name"
                 name="user_name"
-                className="border-slate-200 border-2 w-full rounded-lg mb-8 p-1 "/>
+                className=" w-full nm-inset-slate-500  rounded-lg mb-8 p-2 "/>
                 <input
                 placeholder="Email"
                 name="user_email"
-                className="border-slate-200 border-2 w-full rounded-lg mb-8 p-1"/>
+                className=" w-full nm-inset-slate-500 rounded-lg mb-8 p-2"/>
                 <input
                 placeholder="Subject"
                 name="user_subject"
-                className="border-slate-200 border-2 w-full rounded-lg mb-8 p-1"/>
+                className=" w-full nm-inset-slate-500 rounded-lg mb-8 p-2"/>
                 <textarea
                 placeholder="Message"
                 name="message" 
-                className="border-slate-200 border-2 w-full rounded-lg mb-8 p-1 h-32"/>
-                <input className="border-slate-200 border-2 w-3/12 rounded-lg p-2 hover:shadow-2xl hover:bg-slate-200 hover:ease-in-out duration-300 text-center" type="submit" value="Submit" />
+                className=" w-full nm-inset-slate-500 rounded-lg mb-8 p-1 h-32"/>
+                <input className="text-slate-300 w-3/12 nm-concave-slate-500-xl rounded-lg p-2 hover:shadow-2xl hover:ease-in-out duration-300 text-center" type="submit" value="Submit" />
                 <ToastContainer />
 
             </form>
           </div>
           <div className="flex flex-col items-center md:items-start">
 
-            <h1 className="text-gray-400">Phone</h1>
+            <h1 className="text-slate-300">Phone</h1>
             <h1 className="mb-8">+1 5157157734</h1>
-            <h1 className="text-gray-400">Email</h1>
+            <h1 className="text-slate-300">Email</h1>
             <div className="mb-8">
               <a className="hover:underline" href="mailto:andy.guozhen@gmail.com">andy.guozhen@gmail.com</a>
             </div>
-            <h1 className="text-gray-400 ">Social</h1>
+            <h1 className="text-slate-300 ">Social</h1>
             <div className="flex flex-row">
               <a href="https://www.linkedin.com/in/andyfoo/" target="_blank">
                   <AiFillLinkedin className="  text-6xl text-black" />

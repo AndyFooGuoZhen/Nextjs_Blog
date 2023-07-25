@@ -11,7 +11,8 @@ module.exports = {
       fontFamily: {
         abel: ["Abel", "sans-serif"],
       },
+     
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"),require('tailwindcss-neumorphism')],
 };

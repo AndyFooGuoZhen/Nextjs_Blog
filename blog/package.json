@@ -27,6 +27,7 @@
     "remark-html": "^15.0.2",
     "remark-parse": "^10.0.2",
     "supports-color": "^8.1.1",
+    "tailwindcss-neumorphism": "^0.1.0",
     "unified": "^10.1.2"
   },
   "devDependencies": {

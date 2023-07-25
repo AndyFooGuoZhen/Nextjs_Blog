@@ -29,7 +29,7 @@ const FilteredPostPreviews = (props: PostMetaData[]) => {
              <input
             id="search"
             placeholder="Search posts"
-            className="border-slate-300 border-2 w-full rounded-lg mb-8 p-1"
+            className=" w-full nm-inset-slate-500 rounded-lg mb-8 p-2 "
             onChange={handleInputChange}
             />
             {postPreviews}
