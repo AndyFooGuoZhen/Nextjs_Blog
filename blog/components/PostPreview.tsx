@@ -15,11 +15,11 @@ const PostPreview = (props: PostMetaData) => {
   });
 
   return (
-    <div className="mb-8 p-3 rounded-lg hover:p-6 ease-in-out duration-300 nm-concave-slate-500">
+    <div className="mb-8 p-3 rounded-lg hover:p-6 ease-in-out duration-300 nm-concave-slate-700">
       <Link href={`/posts/${props.slug}`}>
         <h2 className="font-bold font-abel text-slate-200">{props.title}</h2>
         <h3 className="text-sm  text-slate-300">{props.date}</h3>
-        <h3 className="text-sm  text-slate-300">{props.subtitle}</h3>
+        {/* <h3 className="text-sm  text-slate-300">{props.subtitle}</h3> */}
         <div className="flex flex-wrap items-start">{tagElements}</div>
       </Link>
     </div>

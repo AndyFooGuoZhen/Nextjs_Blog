@@ -14,18 +14,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const footer = (
-    <div className="text-center mb-3 text-xs">
-      <h1 className="text-gray-400">Developed by Andy</h1>
+    <div className="text-center mb-3 text-xs text-white">
+      <h1 className="text-">Developed by Andy</h1>
     </div>
   );
 
   return (
     <html lang="en">
-        <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto justify-center bg-slate-500">
+        <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto justify-center bg-slate-700">
         <div className="min-h-screen flex flex-col justify-between w-full">
           <section className="w-full relative mt-3  ">
 
-            {/* <div className="flex justify-around text-center mx-10 md:flex-col p-3 md:justify-start md:items-end md:text-start w-full mb-3 md:w-1/6 "> */}
             <div className="flex justify-around text-center p-3 mb-7">
               <Link href={"/aboutme"}>
                   <h2 className=" text-slate-300   hover:underline  hover:text-white font-medium rounded-lg text-sm  ">

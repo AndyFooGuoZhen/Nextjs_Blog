@@ -33,17 +33,16 @@ const PostPage = async (props: any) => {
   }
 
   const tagElements = tags.map((tag, index) => {
-    return <h5 className=" px-1 border border-black rounded-md mr-1 mt-1 text-black   text-xs" key={index}>{tag}</h5>;
+    return <h5 className=" px-1 border border-slate-300 rounded-md mr-1 mt-1 text-slate-300   text-xs" key={index}>{tag}</h5>;
   });
 
   return (
     <div className=" mb-14 p-2">
-      <h1 className="text-3xl font-bold">{post.data.title}</h1>
-      <h2 className="text-md text-black">{post.data.date}</h2>
+      <h1 className="text-3xl font-bold text-slate-300">{post.data.title}</h1>
+      <h2 className="text-md text-slate-300">{post.data.date}</h2>
       <div className="flex mb-10 items-start">{tagElements}</div>
        <div
-        className="prose text-black"
-
+        className="font-semibold text-slate-300 prose prose-headings:text-slate-200 prose-a:text-slate-200"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
     </div>
