@@ -1,147 +1,104 @@
 "use client"
 
-import logo from "./Images/Iowa-State-University-Logo.png"
 import Image from "next/image";
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { useEffect } from "react";
-
-
-
-
-
-
+import logo from "./Images/Iowa-State-Logo.png"
+import stone from "./Images/stone-chen.png"
+import iowadot from "./Images/Iowa-dot.png"
+import portfolio from "./Images/Portfolio.jpeg"
+import pokemon from "./Images/pokemon.png"
+import picklyfe from "./Images/picklyfe.png"
 
 const Portfolio= () => {
-    function flip() {
-        var flipper = document.querySelector('.flipper');
-    
-        if(flipper){
-            flipper.classList.toggle("flip");
-            console.log('j');
-        }
-      }
-
-    useEffect(() => {
-        var flipContainers = document.querySelectorAll('.flip-container');
-        flipContainers.forEach(function(flipContainer) {
-          flipContainer.addEventListener('click', flip);
-        });
-      
-      });
-
-   
-      
-     
       
     return (
-      <div className="md:max-w-6xl text-center">
+
+      <div className="md:max-w-8xl text-center">
         <h1 className="text-slate-300 text-3xl md:text-4xl mb-8 font-semibold">Professional Experience</h1>
-        <div className="grid gap-5 gap-y-10 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+          <div className="grid gap-5 auto-rows-fr gap-y-10 grid-cols-[repeat(auto-fit,minmax(275px,1fr))] mb-10 ">
             
-        <Card className="max-w-sm h-full w-full nm-concave-slate-700-xl rounded-3xl">
-            <div className="w-2/6 h-2/6 relative m-auto mt-2  ">
-                <Image src={logo} objectFit="cover" alt="" />
+
+    
+
+            <div className="max-w-sm rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
+                <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center">
+                    <Image src={logo} objectFit="cover" className="w-full" alt="" />
+                </div>
+                <div className="p-5 flex flex-col flex-grow">
+                    <h5 className="mb-3 text-2xl font-bold tracking-tight text-slate-300">Full stack software developer</h5>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed Linear Regression Analysis tools for Biochemistry researchers</p>
+                   
+                </div>
             </div>
 
-            <CardContent className="">
-                <Typography gutterBottom variant="h5" component="div" className="text-slate-300">
-                Full stack software developer
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+            
+        
+            <div className="max-w-sm rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
+                <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center">
+                    <Image src={stone} objectFit="cover" className="w-full" alt="" />
+                </div>
+                <div className="p-5 ">
+                    <h5 className="mb-3 text-2xl font-bold tracking-tight text-slate-300">Full stack software developer</h5>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed Linear Regression Analysis tools for Biochemistry researchers</p>
+                    <a href="https://biochempy.bb.iastate.edu/" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5">
+                         Website
+                    </a>
+                </div>
+            </div>
+
+
+            <div className="max-w-sm rounded-3xl nm-concave-slate-700 md:pb-7">
+                <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center">
+                    <Image src={iowadot} objectFit="cover" className="w-full" alt="" />
+                </div>
+                <div className="p-5">
+                    <h5 className="mb-3 text-2xl font-bold tracking-tight text-slate-300">Software Engineering Intern</h5>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Reconstructed PDF processing modules for issuing traffic permits</p>
+                </div>
+            </div>
+
+        
+        </div>
+
+        <h1 className="text-slate-300 text-3xl md:text-4xl mb-8  font-semibold">Projects</h1>
+
+        <div className="grid gap-5 auto-rows-fr gap-y-10 grid-cols-[repeat(auto-fit,minmax(275px,1fr))] mb-10 ">
+
+        
+ 
+
+
+
+        <div className="max-w-sm rounded-3xl shadow nm-concave-gray-800 ">
+            <Image src={portfolio} objectFit="cover" className="w-full rounded-t-3xl" alt="" />
+            <img src="/Iowa-dot.png"/>
+            <div className="p-6  rounded-b-3xl">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Portfolio + Blog</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Used for portfolio purposes and uploading blogs</p>
                 
-                </Typography>
-            </CardContent>
-
-
-        </Card>
-
-
-
-        <div className="flip-container">
-         <div className="flipper">
-            <div className="front bg-black w-full text-white">
-                shel
-            </div>
-            <div className="back bg-blue w-full">
-            <p>You won</p>
             </div>
         </div>
+
+        <div className="max-w-sm rounded-3xl shadow nm-concave-gray-800">
+            <Image src={pokemon} objectFit="cover" className="w-full rounded-t-3xl" alt="" />
+            <div className="p-6 rounded-b-3xl">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Pokemon Game</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed a cli-based pokemon game as part of a class project</p>
+            </div>
         </div>
 
-  {/* <div className="group h-96 w-80 [perspective:1000px]">
-    <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]" id="test">
-      <div className="absolute inset-0">
-        <button  onClick={()=>flip("test")}/>
-        hello
-        <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')" alt="" />
-      </div>
-      <div className=" absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200  [backface-visibility:hidden] hover:[transform:rotateY(180deg)]" id="test2" >
-        <div className="flex min-h-full flex-col items-center justify-center">
-          <h1 className="text-3xl font-bold">Jane Doe</h1>
-          <p className="text-lg">Photographer & Art</p>
-          <p className="text-base">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <button className="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Read More</button>
+        <div className="max-w-sm rounded-3xl shadow nm-concave-gray-800">
+            <Image src={picklyfe} objectFit="cover" className="w-full rounded-t-3xl" alt="" />
+            <div className="p-6 rounded-b-3xl">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Picklyfe</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Decision based android game for class project</p>
+            </div>
         </div>
-      </div>
-    </div>
-  
-    </div> */}
 
-{/* <div className="group h-96 w-80 [perspective:1000px]">
-    <div id="test" className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] ">
-      <div className="absolute inset-0">
-        <div>
-        <Button onClick={ ()=>flip("test")} className="bg-white">Hello</Button>
-
-        </div>
-        <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40" src="https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')" alt="" />
-      </div>
-      <div className="absolute inset-0 h-full w-full rounded-xl bg-black px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-        <div className="flex min-h-full flex-col items-center justify-center">
-          <h1 className="text-3xl font-bold">Jane Doe</h1>
-          <p className="text-lg">Photographer & Art</p>
-          <p className="text-base">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <button className="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Read More</button>
-        </div>
-      </div>
-    </div>
-  </div> */}
-
-  
-
-  
-    
-            
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
 
 
 
         </div>
-        <h1 className="text-slate-300 text-3xl md:text-4xl mb-8 font-semibold">Projects</h1>
-
       </div>
     );
   };
