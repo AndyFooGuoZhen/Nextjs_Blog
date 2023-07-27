@@ -20,7 +20,7 @@ tags: 'Travel, Solo trip, Las Vegas'
 - Took an uber to capital one cafe at Fashion Show Mall, did a little work there and eased into my solo travelling journey (Capital one holders get discounted coffees) 
 - Walked to Wynn hotels and casinos, wondered what people do in their lives to have the means to spend on designer branded items when I'm just a broke college student 
 - Walked to different casinos and hotels just to see their architecture, different casinos have different minimum bets
-- Under the hot and schorching sun, I head off to Kimchee, a korean BBQ restaurant for dinner 
+- Under the hot and scorching sun, I head off to Kimchee, a korean BBQ restaurant for dinner 
 - Took another uber back to gold coast hotel and decided to end the day with a small gambling and bowling session
 
 ##### Detailed thoughts
