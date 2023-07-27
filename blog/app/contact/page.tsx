@@ -32,19 +32,19 @@ const Contact = () => {
               <input
                 placeholder="Name"
                 name="user_name"
-                className=" w-full nm-convex-slate-700  text-white rounded-lg mb-8 p-2 "/>
+                className=" w-full bg-slate-600  text-white rounded-lg mb-8 p-2 "/>
                 <input
                 placeholder="Email"
                 name="user_email"
-                className=" w-full nm-convex-slate-700 text-white rounded-lg mb-8 p-2"/>
+                className=" w-full bg-slate-600 text-white rounded-lg mb-8 p-2"/>
                 <input
                 placeholder="Subject"
                 name="user_subject"
-                className=" w-full nm-convex-slate-700 text-white rounded-lg mb-8 p-2"/>
+                className=" w-full bg-slate-600 text-white rounded-lg mb-8 p-2"/>
                 <textarea
                 placeholder="Message"
                 name="message" 
-                className=" w-full nm-convex-slate-700 text-white rounded-lg mb-8 p-1 h-32"/>
+                className=" w-full bg-slate-600 text-white rounded-lg mb-8 p-1 h-32"/>
                 <input className="text-slate-300 font-semibold border-2 nm-convex-slate-700-xl w-3/12 rounded-lg p-1 hover:shadow-2xl hover:ease-in-out duration-300 text-center" type="submit" value="Submit" />
                 <ToastContainer />
 

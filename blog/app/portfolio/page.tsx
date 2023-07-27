@@ -15,14 +15,10 @@ import laptopml from "./Images/mllaptop.png"
 const Portfolio= () => {
       
     return (
-
       <div className="md:max-w-8xl text-center">
         <h1 className="text-slate-300 text-3xl md:text-4xl mb-8 font-semibold">Professional Experience</h1>
           <div className="grid gap-5 gap-y-10 grid-cols-[repeat(auto-fit,minmax(275px,1fr))] mb-10 ">
             
-
-    
-
             <div className="rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
                 <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center">
                     <Image src={logo} objectFit="cover" className="w-full" alt="" />
@@ -34,8 +30,6 @@ const Portfolio= () => {
                 </div>
             </div>
 
-            
-        
             <div className="rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
                 <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center">
                     <Image src={stone} objectFit="cover" className="w-full" alt="" />
@@ -43,9 +37,10 @@ const Portfolio= () => {
                 <div className="p-5 ">
                     <h5 className="mb-3 text-2xl font-bold tracking-tight text-slate-300">Full stack software developer</h5>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed Linear Regression Analysis tools for Biochemistry researchers</p>
-                    <a href="https://biochempy.bb.iastate.edu/" target="_blank" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5">
-                         Website
+                    <a target="_blank" href="https://biochempy.bb.iastate.edu/">
+                        <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Web app</button>
                     </a>
+                    
                 </div>
             </div>
 
@@ -82,6 +77,9 @@ const Portfolio= () => {
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Pokemon Game</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed a cli-based pokemon game <br></br>(Class project)</p>
+                <a target="_blank" href="https://github.com/AndyFooGuoZhen/Pokemon_game">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Details</button>
+                </a>
             </div>
         </div>
 
@@ -90,6 +88,12 @@ const Portfolio= () => {
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Picklyfe</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Decision based android game (Class project)</p>
+                <a target="_blank" href="https://github.com/AndyFooGuoZhen/PickLyfe" className="mr-5">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Details</button>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=Cqm9fOjT4_U">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Demo</button>
+                </a>
             </div>
         </div>
 
@@ -98,6 +102,9 @@ const Portfolio= () => {
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Quackpocalypse</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed chat functionality for a web-based game <br></br>(Class project)</p>
+                <a target="_blank" href="https://github.com/AndyFooGuoZhen/Quackpocalypse">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Details</button>
+                </a>
             </div>
         </div>
 
@@ -107,6 +114,9 @@ const Portfolio= () => {
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Votememes</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Web application for voting the best propgramming memes <br></br>(Hackathon project)</p>
+                <a href ="https://github.com/benthecoder/VoteMemes" target="_blank">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Details</button>
+                </a>
             </div>
         </div>
 
@@ -115,6 +125,10 @@ const Portfolio= () => {
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Todo List</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Web application used for demonstrating CRUD operations using Firebase <br></br>(Class project)</p>
+                <a className="" href="https://todo-list-firebase-cs363-hoxb.vercel.app/" target="_blank">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Web app</button>
+                </a>
+               
             </div>
         </div>
 
@@ -123,6 +137,12 @@ const Portfolio= () => {
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Laptop price predictor</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Basic ML Web application used for predicting prices of laptops <br></br>(Personal project)</p>
+                <a className="mr-5 " target="_blank" href="https://medium.com/analytics-vidhya/predicting-laptop-prices-using-ml-e60a0315b45a">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Article</button>
+                </a>
+                <a target="_blank" href="https://github.com/AndyFooGuoZhen/Laptop-Price-ML-Project-Deploy-">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Details</button>
+                </a>
             </div>
         </div>
 
