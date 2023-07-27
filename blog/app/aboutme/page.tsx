@@ -22,7 +22,7 @@ const AboutMe = () => {
           I've built this personal portfolio + blog website to share about my programming projects and experiences 
           in hopes of inspiring others to delve into the field of software engineering. Throughout my programming journey, 
           I've been exposed to a variety of tech stacks / frameworks and I'm eager to create quality services for others
-          with modern technologies. 
+          using modern technologies. 
         </h3>
         <h3 className="my-5">
 

@@ -11,14 +11,6 @@ import votememes from "./Images/votememes.png"
 import duck from "./Images/duckGame.jpeg"
 import todo from "./Images/todo.png"
 import laptopml from "./Images/mllaptop.png"
-import { Document, Page, pdfjs } from 'react-pdf';
-import { useState } from "react";
-
-import { ClassNames } from "@emotion/react";
-
-pdfjs.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
-
-
 
 const Portfolio= () => {
 
