@@ -156,16 +156,7 @@ const Portfolio= () => {
 
 
         </div>
-
-       
-<div className="w-full sm:h-[1000rem] md:h-[100vh]">
-<object  className="rounded-3xl h-full" type="application/pdf"
-            data="/Andy_Foo_Resume.pdf"
-            width={"100%"}
-            height={"100%"}
-            >
-        </object>
-</div>
+        
        
 
 
