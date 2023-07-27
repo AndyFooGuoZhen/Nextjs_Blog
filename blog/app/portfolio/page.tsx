@@ -7,6 +7,10 @@ import iowadot from "./Images/Iowa-dot.png"
 import portfolio from "./Images/Portfolio.jpeg"
 import pokemon from "./Images/pokemon.png"
 import picklyfe from "./Images/picklyfe.png"
+import votememes from "./Images/votememes.png"
+import duck from "./Images/duckGame.jpeg"
+import todo from "./Images/todo.png"
+import laptopml from "./Images/mllaptop.png"
 
 const Portfolio= () => {
       
@@ -14,25 +18,25 @@ const Portfolio= () => {
 
       <div className="md:max-w-8xl text-center">
         <h1 className="text-slate-300 text-3xl md:text-4xl mb-8 font-semibold">Professional Experience</h1>
-          <div className="grid gap-5 auto-rows-fr gap-y-10 grid-cols-[repeat(auto-fit,minmax(275px,1fr))] mb-10 ">
+          <div className="grid gap-5 gap-y-10 grid-cols-[repeat(auto-fit,minmax(275px,1fr))] mb-10 ">
             
 
     
 
-            <div className="max-w-sm rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
+            <div className="rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
                 <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center">
                     <Image src={logo} objectFit="cover" className="w-full" alt="" />
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
                     <h5 className="mb-3 text-2xl font-bold tracking-tight text-slate-300">Full stack software developer</h5>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed Linear Regression Analysis tools for Biochemistry researchers</p>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developer and maintainer for a virtual biochemistry lab software </p>
                    
                 </div>
             </div>
 
             
         
-            <div className="max-w-sm rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
+            <div className="rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
                 <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center">
                     <Image src={stone} objectFit="cover" className="w-full" alt="" />
                 </div>
@@ -46,7 +50,7 @@ const Portfolio= () => {
             </div>
 
 
-            <div className="max-w-sm rounded-3xl nm-concave-slate-700 md:pb-7">
+            <div className="rounded-3xl nm-concave-slate-700 md:pb-7">
                 <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center">
                     <Image src={iowadot} objectFit="cover" className="w-full" alt="" />
                 </div>
@@ -64,13 +68,8 @@ const Portfolio= () => {
         <div className="grid gap-5 auto-rows-fr gap-y-10 grid-cols-[repeat(auto-fit,minmax(275px,1fr))] mb-10 ">
 
         
- 
-
-
-
-        <div className="max-w-sm rounded-3xl shadow nm-concave-gray-800 ">
-            <Image src={portfolio} objectFit="cover" className="w-full rounded-t-3xl" alt="" />
-            <img src="/Iowa-dot.png"/>
+        <div className="rounded-3xl shadow nm-concave-gray-800 ">
+            <Image src={portfolio} objectFit="cover" className="w-full rounded-t-3xl aspect-[16/9]" alt="" />
             <div className="p-6  rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Portfolio + Blog</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Used for portfolio purposes and uploading blogs</p>
@@ -78,24 +77,54 @@ const Portfolio= () => {
             </div>
         </div>
 
-        <div className="max-w-sm rounded-3xl shadow nm-concave-gray-800">
-            <Image src={pokemon} objectFit="cover" className="w-full rounded-t-3xl" alt="" />
+        <div className="rounded-3xl shadow nm-concave-gray-800">
+            <Image src={pokemon} objectFit="cover" className="w-full rounded-t-3xl aspect-[16/9]" alt="" />
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Pokemon Game</h5>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed a cli-based pokemon game as part of a class project</p>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed a cli-based pokemon game <br></br>(Class project)</p>
             </div>
         </div>
 
-        <div className="max-w-sm rounded-3xl shadow nm-concave-gray-800">
-            <Image src={picklyfe} objectFit="cover" className="w-full rounded-t-3xl" alt="" />
+        <div className="rounded-3xl shadow nm-concave-gray-800 ">
+            <Image src={picklyfe}   className="w-full rounded-t-3xl aspect-[16/9] object-contain" alt="" />
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Picklyfe</h5>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Decision based android game for class project</p>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Decision based android game (Class project)</p>
             </div>
         </div>
 
-   
+        <div className="rounded-3xl shadow nm-concave-gray-800 ">
+            <Image src={duck}   className="w-full rounded-t-3xl aspect-[16/9] object-contain" alt="" />
+            <div className="p-6 rounded-b-3xl">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Quackpocalypse</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed chat functionality for a web-based game <br></br>(Class project)</p>
+            </div>
+        </div>
 
+       
+        <div className="rounded-3xl shadow nm-concave-gray-800 ">
+            <Image src={votememes} className="w-full rounded-t-3xl aspect-[16/9] object-contain" alt="" />
+            <div className="p-6 rounded-b-3xl">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Votememes</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Web application for voting the best propgramming memes <br></br>(Hackathon project)</p>
+            </div>
+        </div>
+
+        <div className="rounded-3xl shadow nm-concave-gray-800 ">
+            <Image src={todo} className="w-full rounded-t-3xl aspect-[16/9] object-contain" alt="" />
+            <div className="p-6 rounded-b-3xl">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Todo List</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Web application used for demonstrating CRUD operations using Firebase <br></br>(Class project)</p>
+            </div>
+        </div>
+
+        <div className="rounded-3xl shadow nm-concave-gray-800 ">
+            <Image src={laptopml} className="w-full rounded-t-3xl aspect-[16/9] object-cover" alt="" />
+            <div className="p-6 rounded-b-3xl">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Laptop price predictor</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Basic ML Web application used for predicting prices of laptops <br></br>(Personal project)</p>
+            </div>
+        </div>
 
 
         </div>
