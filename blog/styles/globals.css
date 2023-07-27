@@ -6,3 +6,26 @@
 .parsedown h1 {
   @apply text-2xl font-extrabold py-4;
 }
+
+.flip-container .flipper.flip {
+  @apply [transform:rotateY(180deg)];
+}
+
+.flipper {
+  @apply  relative transition duration-700 [transform-style:preserve-3d];
+}
+
+/* hide back of pane during swap */
+.front, .back {
+   @apply [backface-visibility:hidden] absolute;
+}
+
+/* front pane, placed above back */
+.front {
+    @apply z-10 [transform:rotateY(0deg)];
+}
+
+/* back, initially hidden pane */
+.back {
+  @apply [transform:rotateY(180deg)] bg-white;
+}

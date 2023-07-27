@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./components/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
+export default({
+  content: ["./components/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       backgroundImage: {
@@ -15,4 +15,4 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography"),require('tailwindcss-neumorphism')],
-};
+});
