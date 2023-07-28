@@ -87,7 +87,7 @@ const Portfolio= () => {
             <Image src={picklyfe}   className="w-full rounded-t-3xl aspect-[16/9] object-contain" alt="" />
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Picklyfe</h5>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Decision based android game (Class project)</p>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Decision based android game <br></br>(Class project)</p>
                 <a target="_blank" href="https://github.com/AndyFooGuoZhen/PickLyfe" className="mr-5">
                     <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Details</button>
                 </a>
