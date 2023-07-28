@@ -26,7 +26,7 @@ export default function RootLayout({
           <section className="w-full relative mt-3  ">
 
             <div className="flex justify-around text-center p-3 mb-7">
-              <Link href={"/aboutme"}>
+              <Link href={"/"}>
                   <h2 className=" text-slate-300   hover:underline  hover:text-white font-medium rounded-lg text-sm  ">
                     About
                   </h2>
@@ -37,9 +37,8 @@ export default function RootLayout({
                     Portfolio
                   </h2>
                 </Link>
-              <Link href={"/"}>
+              <Link href={"/blog"}>
                 <h2 className="  text-slate-300  hover:underline hover:text-white font-medium rounded-lg text-sm  ">
-
                   Blog
                 </h2>
               </Link>

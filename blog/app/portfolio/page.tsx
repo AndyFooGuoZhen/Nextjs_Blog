@@ -98,7 +98,7 @@ const Portfolio= () => {
         </div>
 
         <div className="rounded-3xl shadow nm-concave-gray-800 ">
-            <Image src={duck}   className="w-full rounded-t-3xl aspect-[16/9] object-contain" alt="" />
+            <Image src={duck}   className="w-full rounded-t-3xl aspect-[16/9] object-cover" alt="" />
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Quackpocalypse</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed chat functionality for a web-based game <br></br>(Class project)</p>
@@ -110,7 +110,7 @@ const Portfolio= () => {
 
        
         <div className="rounded-3xl shadow nm-concave-gray-800 ">
-            <Image src={votememes} className="w-full rounded-t-3xl aspect-[16/9] object-contain" alt="" />
+            <Image src={votememes} className="w-full rounded-t-3xl aspect-[16/9] object-cover" alt="" />
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Votememes</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Web application for voting the best propgramming memes <br></br>(Hackathon project)</p>
@@ -121,7 +121,7 @@ const Portfolio= () => {
         </div>
 
         <div className="rounded-3xl shadow nm-concave-gray-800 ">
-            <Image src={todo} className="w-full rounded-t-3xl aspect-[16/9] object-contain" alt="" />
+            <Image src={todo} className="w-full rounded-t-3xl aspect-[16/9] object-cover" alt="" />
             <div className="p-6 rounded-b-3xl">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Todo List</h5>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Web application used for demonstrating CRUD operations using Firebase <br></br>(Class project)</p>
