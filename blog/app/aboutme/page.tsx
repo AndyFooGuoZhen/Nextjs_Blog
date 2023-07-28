@@ -13,7 +13,7 @@ const AboutMe = () => {
       </div>
       <div className="mt-11 px-4 text-justify text-sm md:text-lg text-slate-300 ">
         <h3>
-          Hi there! I'm Andy. I'm originally from Malaysia and I'm currently pursuing computer science as a senior at Iowa State University. I'm always looking for ways to push
+          Hi there stranger! I'm Andy and I'm from Malaysia. I'm currently pursuing computer science as a senior at Iowa State University. I'm always looking for ways to push
           myself and grow personally by taking on new projects.
         </h3>
         <h1 className=""></h1>
