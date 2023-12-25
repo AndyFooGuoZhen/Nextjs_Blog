@@ -11,6 +11,7 @@ import votememes from "./Images/votememes.png"
 import duck from "./Images/duckGame.jpeg"
 import todo from "./Images/todo.png"
 import laptopml from "./Images/mllaptop.png"
+import qci from "./Images/QCI.png"
 
 const Portfolio= () => {
 
@@ -18,6 +19,18 @@ const Portfolio= () => {
       <div className="md:max-w-8xl text-center">
         <h1 className="text-slate-300 text-3xl md:text-4xl mb-8 font-semibold">Professional Experience</h1>
           <div className="grid gap-5 gap-y-10 grid-cols-[repeat(auto-fit,minmax(275px,1fr))] mb-10 ">
+
+          <div className="rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
+                <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center items-center">
+                    <Image src={qci} objectFit="cover" className="w-3/5" alt="" />
+                </div>
+                <div className="p-5 flex flex-col flex-grow">
+                    <h5 className="mb-3 text-2xl font-bold tracking-tight text-slate-300">Software developer</h5>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Full Stack Junior Developer at QCI </p>
+                   
+                </div>
+            </div>
+
             
             <div className="rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
                 <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center">
