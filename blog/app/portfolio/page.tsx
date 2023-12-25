@@ -12,6 +12,7 @@ import duck from "./Images/duckGame.jpeg"
 import todo from "./Images/todo.png"
 import laptopml from "./Images/mllaptop.png"
 import qci from "./Images/QCI.png"
+import senior from "./Images/senior.png"
 
 const Portfolio= () => {
 
@@ -75,7 +76,20 @@ const Portfolio= () => {
 
         <div className="grid gap-5 auto-rows-fr gap-y-10 grid-cols-[repeat(auto-fit,minmax(275px,1fr))] mb-10 ">
 
-        
+        <div className="rounded-3xl shadow nm-concave-gray-800 ">
+            <Image src={senior} objectFit="cover" className="w-full rounded-t-3xl aspect-[16/9]" alt="" />
+            <div className="p-6  rounded-b-3xl">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Senior Capstone Project</h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Developed a mobile app used for intramural sports scheduling</p>
+                <a target="_blank" className="mr-5" href="https://seniord.cs.iastate.edu/2023-Dec-06/">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Details</button>
+                </a>
+                <a target="_blank" href="https://drive.google.com/file/d/1Rg5f_1W15oHPXnixDr_FqhOxk-evIPHS/view">
+                    <button className="text-slate-300 font-semibold rounded-lg p-1 border-2 nm-convex-slate-700-xl hover:shadow-2xl hover:ease-in-out duration-300 text-center">Demo</button>
+                </a>
+            </div>
+        </div>
+
         <div className="rounded-3xl shadow nm-concave-gray-800 ">
             <Image src={portfolio} objectFit="cover" className="w-full rounded-t-3xl aspect-[16/9]" alt="" />
             <div className="p-6  rounded-b-3xl">
