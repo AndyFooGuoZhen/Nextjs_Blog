@@ -22,8 +22,8 @@ const Portfolio= () => {
           <div className="grid gap-5 gap-y-10 grid-cols-[repeat(auto-fit,minmax(275px,1fr))] mb-10 ">
 
           <div className="rounded-3xl nm-concave-slate-700 md:pb-7 shadow-white">
-                <div className="w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center items-center">
-                    <Image src={qci} objectFit="cover" className="w-3/5" alt="" />
+                <div className=" w-5/6 h-2/6 relative m-auto mt-2 flex flex-col justify-center items-center">
+                    <Image src={qci} objectFit="contain" className="w-auto h-5/6" alt="" />
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
                     <h5 className="mb-3 text-2xl font-bold tracking-tight text-slate-300">Software developer</h5>
