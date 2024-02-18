@@ -13,8 +13,7 @@ const AboutMe = () => {
       </div>
       <div className="mt-11 px-4 text-justify text-sm md:text-lg text-slate-300 ">
         <h3>
-          Hi there stranger! I'm Andy and I'm from Malaysia. I'm currently pursuing computer science as a senior at Iowa State University. I'm always looking for ways to push
-          myself and grow personally by taking on new projects.
+          Hi there stranger! I'm Andy and I'm from Malaysia. As of now, I work as a software engineer at QCI.
         </h3>
         <h1 className=""></h1>
         <div className="my-5"></div>
@@ -25,7 +24,6 @@ const AboutMe = () => {
           using modern technologies. 
         </h3>
         <h3 className="my-5">
-
           As for blogs, I love jotting down ideas and personal thoughts about
           interesting events of my day or stuff I've found to be impactful from
           the internet. I would like to inspire others to
