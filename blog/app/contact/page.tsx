@@ -56,8 +56,6 @@ const Contact = () => {
           </div>
           <div className="flex flex-col items-center md:items-start">
 
-            <h1 className="text-slate-200">Phone</h1>
-            <h1 className="mb-8 text-white">+1 5157157734</h1>
             <h1 className="text-slate-200">Email</h1>
             <div className="mb-8">
               <a className="hover:underline text-white" href="mailto:andy.guozhen@gmail.com">andy.guozhen@gmail.com</a>
