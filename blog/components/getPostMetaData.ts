@@ -1,7 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { PostMetaData } from "@/components/PostMetaData";
-import tagGenerator from "./tagsGenerator";
 
 //Function to read files from /posts
 const getPostMetadata = (): PostMetaData[] => {
@@ -11,23 +10,13 @@ const getPostMetadata = (): PostMetaData[] => {
 
   const posts = markdownPosts.map((fileName) => {
     const fileContents = fs.readFileSync(`posts/${fileName}`, "utf-8");
-    const {data , content: matterResult} = matter(fileContents);
-
-      //write tags here if tags is empty, call gpt api here
-      if(data.tags == null){
-      const generatedTags = tagGenerator(data.title, matterResult).then(resultTags =>{
-        const updatedData = {...data, tags: resultTags};
-        const updatedContent = matter.stringify(matterResult, updatedData);
-        fs.writeFileSync(`posts/${fileName}`, updatedContent);
-      });
-    }
+    const { data } = matter(fileContents);
 
     return {
       title: data.title,
       date: data.date,
       subtitle: data.subtitle,
       slug: fileName.replace(".md", ""),
-      tags: data.tags,
     };
   });
 

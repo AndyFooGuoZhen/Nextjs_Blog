@@ -1,6 +1,10 @@
+const typography = require("@tailwindcss/typography");
+const neumorphism = require("tailwindcss-neumorphism");
+
 /** @type {import('tailwindcss').Config} */
-export default({
+module.exports = {
   content: ["./components/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}", "./node_modules/flowbite/**/*.js"],
+
   theme: {
     extend: {
       backgroundImage: {
@@ -11,8 +15,8 @@ export default({
       fontFamily: {
         abel: ["Abel", "sans-serif"],
       },
-     
     },
   },
-  plugins: [require("@tailwindcss/typography"),require('tailwindcss-neumorphism')],
-});
+
+  plugins: [typography, neumorphism]
+};

@@ -14,36 +14,36 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const footer = (
-    <div className="text-center mb-3 text-xs text-white">
+    <div className="text-center mb-3 text-xs text-gray-500">
       <h1 className="text-">Developed by Andy</h1>
     </div>
   );
 
   return (
     <html lang="en">
-        <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto justify-center bg-slate-700">
+        <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto justify-center bg-[#e0e5ec]">
         <div className="min-h-screen flex flex-col justify-between w-full ">
           <section className="w-full relative mt-3  ">
 
             <div className="flex justify-around text-center p-3 mb-7">
               <Link href={"/"}>
-                  <h2 className=" text-slate-300   hover:underline  hover:text-white font-medium rounded-lg text-sm  ">
+                  <h2 className=" text-gray-600   hover:underline  hover:text-black font-medium rounded-lg text-sm  ">
                     About
                   </h2>
                 </Link>
                 <Link href={"/portfolio"}>
-                  <h2 className="  text-slate-300 hover:underline hover:text-white font-medium rounded-lg text-sm  ">
+                  <h2 className="  text-gray-600 hover:underline hover:text-black font-medium rounded-lg text-sm  ">
 
                     Portfolio
                   </h2>
                 </Link>
               <Link href={"/blog"}>
-                <h2 className="  text-slate-300  hover:underline hover:text-white font-medium rounded-lg text-sm  ">
+                <h2 className="  text-gray-600  hover:underline hover:text-black font-medium rounded-lg text-sm  ">
                   Blog
                 </h2>
               </Link>
               <Link href={"/contact"}>
-              <h2 className=" text-slate-300 hover:underline hover:text-white font-medium rounded-lg text-sm  ">
+              <h2 className=" text-gray-600 hover:underline hover:text-black font-medium rounded-lg text-sm  ">
 
                 Contact
               </h2>
