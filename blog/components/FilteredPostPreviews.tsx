@@ -20,7 +20,7 @@ const FilteredPostPreviews = (props: PostMetaData[]) => {
     data.subtitle.toLowerCase().includes(filterWord));
 
     const postPreviews = filteredPostMetaDatas.map((data) => (
-    <PostPreview key={data.title} {...data} />
+    <PostPreview key={data.title} {...data} searchTerm={filterWord} />
   ));
 
     return (
