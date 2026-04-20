@@ -4,20 +4,20 @@ import myImage from "./Andy_Foo.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="mx-auto md:max-w-4xl bg-[#e0e5ec] shadow-[12px_12px_24px_#a3b1c6,-12px_-12px_24px_#ffffff] p-8 md:p-12 rounded-[3rem] transition-all duration-300">
-      <h1 className="font-bold text-center text-3xl md:text-5xl font-abel mb-8 text-gray-800 tracking-tight">
+    <div className="mx-auto md:max-w-4xl bg-[#e0e5ec] dark:bg-[#1b1b1b] shadow-[12px_12px_24px_#a3b1c6,-12px_-12px_24px_#ffffff] dark:shadow-[12px_12px_24px_#121212,-12px_-12px_24px_#242424] p-8 md:p-12 rounded-[3rem] transition-all duration-300">
+      <h1 className="font-bold text-center text-3xl md:text-5xl font-abel mb-8 text-gray-800 dark:text-orange-500 tracking-tight">
         Andy Foo
       </h1>
       
       <div className="flex flex-col items-center">
-        <div className="relative rounded-full w-48 h-48 md:w-56 md:h-56 overflow-hidden shadow-[inset_8px_8px_16px_#a3b1c6,inset_-8px_-8px_16px_#ffffff] p-3 bg-[#e0e5ec]">
+        <div className="relative rounded-full w-48 h-48 md:w-56 md:h-56 overflow-hidden shadow-[inset_8px_8px_16px_#a3b1c6,inset_-8px_-8px_16px_#ffffff] dark:shadow-[inset_8px_8px_16px_#121212,inset_-8px_-8px_16px_#242424] p-3 bg-[#e0e5ec] dark:bg-[#1b1b1b]">
             <div className="relative w-full h-full rounded-full overflow-hidden shadow-md">
                 <Image src={myImage} layout="fill" objectFit="cover" alt="Andy Foo" />
             </div>
         </div>
       </div>
 
-      <div className="mt-12 px-2 text-justify text-base md:text-xl text-gray-700 leading-relaxed font-medium">
+      <div className="mt-12 px-2 text-justify text-base md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-medium">
         <p className="mb-6">
           Hi there stranger! I'm Andy and I'm from Malaysia. As of now, I work as a software engineer at QCI.
         </p>

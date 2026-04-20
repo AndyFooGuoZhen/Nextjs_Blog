@@ -26,10 +26,10 @@ const PostPage = async (props: { params: Promise<{ slug: string }> }) => {
 
   return (
     <div className=" mb-14 p-2">
-      <h1 className="text-4xl font-bold text-gray-900 mb-2">{post.data.title}</h1>
-      <h2 className="text-lg text-gray-600 mb-12 font-medium">{post.data.date}</h2>
+      <h1 className="text-4xl font-bold text-gray-900 dark:text-orange-500 mb-2">{post.data.title}</h1>
+      <h2 className="text-lg text-gray-600 dark:text-gray-400 mb-12 font-medium">{post.data.date}</h2>
        <div
-        className="font-medium text-gray-800 prose prose-headings:text-gray-900 prose-a:text-blue-600 max-w-none"
+        className="font-medium text-gray-800 dark:text-gray-200 prose dark:prose-invert prose-headings:text-gray-900 dark:prose-headings:text-orange-400 prose-a:text-orange-600 dark:prose-a:text-orange-400 max-w-none"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
     </div>

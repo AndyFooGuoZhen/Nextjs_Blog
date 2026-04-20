@@ -3,6 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
 .parsedown h1 {
-  @apply text-2xl font-extrabold py-4;
+  @apply text-2xl font-extrabold py-4 dark:text-orange-500;
+}
+
+.parsedown p {
+  @apply dark:text-gray-300;
+}
+
+/* Neumorphic utilities for light mode */
+.nm-flat-light {
+  @apply bg-[#e0e5ec] shadow-[9px_9px_16px_#a3b1c6,-9px_-9px_16px_#ffffff];
+}
+
+.nm-inset-light {
+  @apply bg-[#e0e5ec] shadow-[inset_2px_2px_5px_#a3b1c6,inset_-2px_-2px_5px_#ffffff];
+}
+
+/* High-quality Neumorphic utilities for dark mode (based on the provided design) */
+/* Background: #1b1b1b */
+/* Dark Shadow: #121212 */
+/* Light Shadow: #242424 */
+
+.nm-flat-dark {
+  @apply bg-[#1b1b1b] shadow-[10px_10px_20px_#121212,-10px_-10px_20px_#242424];
+}
+
+.nm-inset-dark {
+  @apply bg-[#1b1b1b] shadow-[inset_6px_6px_12px_#121212,inset_-6px_-6px_12px_#242424];
+}
+
+.nm-button-dark {
+  @apply bg-[#1b1b1b] shadow-[5px_5px_10px_#121212,-5px_-5px_10px_#242424] active:shadow-[inset_2px_2px_5px_#121212,inset_-2px_-2px_5px_#242424];
 }
